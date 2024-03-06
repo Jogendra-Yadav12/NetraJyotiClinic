@@ -44,3 +44,22 @@ Route::get('register', function () {
 Route::get('login', function () {
     return view('login');
 });
+
+Route::get('recovery', function () {
+    return view('password-recovery');
+});
+
+Route::get('orders', function () {
+    return view('orders');
+});
+
+Route::get('address', function () {
+    return view('address');
+});
+
+
+// Admin routes
+
+Route::get('super', function () {
+    return view('admin.index');
+});

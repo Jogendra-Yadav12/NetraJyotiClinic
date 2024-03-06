@@ -44,8 +44,8 @@
                             </div>
 
                             <div class="list-group">
-                                <a class="list-group-items active" href="{{url('profile')}}"><i class="ti-user pe-2"></i>Profile</a>
-                                <a class="list-group-items" href="account-orders.html"><i class="ti-bag pe-2"></i>Orders<span class="badge badge-pill">6</span></a>
+                                <a class="list-group-items active" href="{{url('/profile')}}"><i class="ti-user pe-2"></i>Profile</a>
+                                <a class="list-group-items" href="{{url('/orders')}}"><i class="ti-bag pe-2"></i>Orders<span class="badge badge-pill">6</span></a>
                                 <a class="list-group-items" href="account-address.html"><i class="ti-location-pin pe-2"></i>Addresses</a>
                                 <a class="list-group-items" href="account-wishlist.html"><i class="ti-heart pe-2"></i>Wishlist<span class="badge badge-pill">3</span></a>
                                 <a class="list-group-items" href="account-tickets.html"><i class="ti-tag pe-2"></i>My Tickets<span class="badge badge-pill">4</span></a>
