@@ -14,7 +14,7 @@
     <meta name="description" content="Smartshop - Multipurpose eCommerce Template + Admin" />
 
     <!-- title  -->
-    <title>Smartshop - Multipurpose eCommerce Template + Admin</title>
+    <title>Netra Jyoti Eye Center</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png">
@@ -176,12 +176,6 @@
 
     </div>
 
-    <!-- BUY TEMPLATE
-    ================================================== -->
-    <div class="buy-theme alt-font d-none d-lg-inline-block"><a href="https://wrapbootstrap.com/theme/smartshop-multipurpose-ecommerce-template-WB0N7CT4D" target="_blank"><i class="fas fa-cart-plus"></i><span>Buy Template</span></a></div>
-
-    <div class="all-demo alt-font d-none d-lg-inline-block"><a href="https://www.chitrakootweb.com/contact.html" target="_blank"><i class="far fa-envelope"></i><span>Quick Question?</span></a></div>
-    
     <!-- SCROLL TO TOP
     ================================================== -->
     <a href="#" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
