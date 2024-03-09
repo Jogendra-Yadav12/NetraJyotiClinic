@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -64,10 +65,30 @@ Route::get('super', function () {
     return view('admin.index');
 });
 
-Route::get('category', function () {
-    return view('admin.category');
+Route::get('category',[App\Http\Controllers\adminController::class,'category']);
+Route::get('addCategory',[App\Http\Controllers\adminController::class,'index']);
+Route::post('addCategory',[App\Http\Controllers\adminController::class,'addcategory']);
+
+Route::get('product', function () {
+    return view('admin.product');
 });
 
-Route::get('addCategory', function () {
-    return view('admin.addCategory');
+Route::get('addProduct', function () {
+    return view('admin.addProduct');
+});
+
+Route::get('productDetails', function () {
+    return view('admin.productDetails');
+});
+
+Route::get('order', function () {
+    return view('admin.orders');
+});
+
+Route::get('orderDetails', function () {
+    return view('admin.orderDetails');
+});
+
+Route::get('customer', function () {
+    return view('admin.customers');
 });

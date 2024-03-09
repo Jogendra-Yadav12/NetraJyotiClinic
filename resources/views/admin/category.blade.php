@@ -68,163 +68,28 @@
                                         <table class="table">
                                             <thead class="bg-light">
                                                 <tr>
-                                                    <th scope="col">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck">
-                                                        </div>
-                                                    </th>
                                                     <th scope="col">ID</th>
                                                     <th scope="col">Image</th>
                                                     <th scope="col">Name</th>
-                                                    <th scope="col">Slug</th>
-                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($category as $key=>$value)
                                                 <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                        </div>
-                                                    </th>
-                                                    <td>1</td>
-                                                    <td><img src="img/category/category1.jpg" alt="..."></td>
-                                                    <td>Echo Spot</td>
-                                                    <td>Echo spot</td>
-                                                    <td>Electronics</td>
+                                                    <td>{{$i}}</td>
+                                                    <td><img src="{{asset('images/'.$value->img)}}" alt="..." style="width:70px;height:70px;border-radius:50%"></td>
+                                                    <td>{{$value->name}}</td>
+                                                    <td>
+                                                    <a href="#" class="me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                                        <i class="far fa-edit text-primary"></i>
+                                                    </a>
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                                                        <i class="far fa-trash-alt text-danger"></i>
+                                                    </a>
+                                                </td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                        </div>
-                                                    </th>
-                                                    <td>2</td>
-                                                    <td><img src="img/category/category2.jpg" alt="..."></td>
-                                                    <td>Camera Phone</td>
-                                                    <td>camera phone</td>
-                                                    <td>Electronics</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                        </div>
-                                                    </th>
-                                                    <td>3</td>
-                                                    <td><img src="img/category/category3.jpg" alt="..."></td>
-                                                    <td>Laptops</td>
-                                                    <td>laptops</td>
-                                                    <td>Electronics</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                                                        </div>
-                                                    </th>
-                                                    <td>4</td>
-                                                    <td><img src="img/category/category4.jpg" alt="..."></td>
-                                                    <td>Security CCTV</td>
-                                                    <td>Security cctv</td>
-                                                    <td>Electronics</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                                                        </div>
-                                                    </th>
-                                                    <td>5</td>
-                                                    <td><img src="img/category/category5.jpg" alt="..."></td>
-                                                    <td>Men's Wear</td>
-                                                    <td>Men's wear</td>
-                                                    <td>Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                                                        </div>
-                                                    </th>
-                                                    <td>6</td>
-                                                    <td><img src="img/category/category6.jpg" alt="..."></td>
-                                                    <td>Women's Wear</td>
-                                                    <td>Women's wear</td>
-                                                    <td>Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck7">
-                                                        </div>
-                                                    </th>
-                                                    <td>7</td>
-                                                    <td><img src="img/category/category7.jpg" alt="..."></td>
-                                                    <td>Accessories</td>
-                                                    <td>accessories</td>
-                                                    <td>Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck8">
-                                                        </div>
-                                                    </th>
-                                                    <td>8</td>
-                                                    <td><img src="img/category/category8.jpg" alt="..."></td>
-                                                    <td>Footwear</td>
-                                                    <td>Footwear</td>
-                                                    <td>Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck9">
-                                                        </div>
-                                                    </th>
-                                                    <td>9</td>
-                                                    <td><img src="img/category/category9.jpg" alt="..."></td>
-                                                    <td>Tops</td>
-                                                    <td>tops</td>
-                                                    <td>Women's Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck10">
-                                                        </div>
-                                                    </th>
-                                                    <td>10</td>
-                                                    <td><img src="img/category/category10.jpg" alt="..."></td>
-                                                    <td>Bottom</td>
-                                                    <td>bottom</td>
-                                                    <td>Women's Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck11">
-                                                        </div>
-                                                    </th>
-                                                    <td>11</td>
-                                                    <td><img src="img/category/category11.jpg" alt="..."></td>
-                                                    <td>Jackets</td>
-                                                    <td>jackets</td>
-                                                    <td>Women's Fashion</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="custom-control custom-checkbox mb-0">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck12">
-                                                        </div>
-                                                    </th>
-                                                    <td>12</td>
-                                                    <td><img src="img/category/category12.jpg" alt="..."></td>
-                                                    <td>Summer Wear</td>
-                                                    <td>summer wear</td>
-                                                    <td>Women's Fashion</td>
-                                                </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

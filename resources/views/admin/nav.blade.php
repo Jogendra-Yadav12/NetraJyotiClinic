@@ -30,23 +30,15 @@
                                 <i class="menu-icon icon-layers"></i><span>Products</span><i class="accordion-icon fa fa-angle-left"></i>
                             </a>
                             <ul>
-                                <li><a href="products.html">Products</a></li>
-                                <li><a href="product-details.html">Product Details</a></li>
-                                <li><a href="product-cart.html">Product Cart</a></li>
-                                <li><a href="add-products.html">Add Products</a></li>
+                                <li><a href="{{url('product')}}">Products</a></li>
+                                <li><a href="{{url('addProduct')}}">Add Products</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="menu-icon icon-flash_on"></i><span>Orders</span><i class="accordion-icon fa fa-angle-left"></i>
-                            </a>
-                            <ul>
-                                <li><a href="orders.html">Orders</a></li>
-                                <li><a href="order-details.html">Order Details</a></li>
-                            </ul>
+                        <a href="{{url('order')}}"> <i class="menu-icon icon-code"></i><span>Orders</span> </a>
                         </li>
                         <li>
-                            <a href="customers.html"> <i class="menu-icon icon-code"></i><span>Customers</span> </a>
+                            <a href="{{url('customer')}}"> <i class="menu-icon icon-code"></i><span>Customers</span> </a>
                         </li>
                         
                         <li class="menu-divider"></li>

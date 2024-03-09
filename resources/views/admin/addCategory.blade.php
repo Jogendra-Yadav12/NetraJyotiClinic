@@ -17,13 +17,16 @@
                         <div class="col-md-12 grid-margin">
                             <div class="card card-white">
                                 <div class="card-heading clearfix">
-                                    <h4 class="card-title">Upload your Category</h4>
+                                    <h4 class="card-title">Add Sub Category</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form class="form-inline">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="customFile" />
-                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                    <form class="form-inline" action="{{url('')}}">
+                                    <div class="form-group">
+                                            <label for="example">Sub Category Name</label>
+                                            <input type="text" class="form-control" id="example" name="name" />
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Sub Category</button>
                                         </div>
                                     </form>
                                 </div>
@@ -37,32 +40,30 @@
                         <div class="col-md-12 grid-margin">
                             <div class="card card-white">
                                 <div class="card-heading clearfix">
-                                    <h4 class="card-title">Add your category description</h4>
+                                    <h4 class="card-title">Add Category</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                    <form action="{{url('addCategory')}}" method="POST" enctype="multipart/form-data">
+                                        @csrf
                                         <div class="form-group">
                                             <label for="exampleInput1">Category Name</label>
-                                            <input type="text" class="form-control" id="exampleInput1" aria-describedby="exampleInput1" />
+                                            <input type="text" class="form-control" id="exampleInput1" name="name" />
                                         </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Slug</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label for="exampleFormControlSelect1">Parent</label>
-                                            <select class="form-select form-control" id="exampleFormControlSelect1" aria-label="Default select example">
-                                                <option selected>Choose Parent Category</option>
-                                                <option value="1">Women's Cloths</option>
-                                                <option value="2">Men's Cloths</option>
-                                                <option value="3">Electronics</option>
-                                                <option value="4">Makeup</option>
-                                                <option value="5">Footwear</option>
-                                                <option value="6">Furniture</option>
-                                            </select>
+                                        <div class="col-md-12 grid-margin">
+                                            <div class="card card-white">
+                                                <div class="card-heading clearfix">
+                                                    <h4 class="card-title">Upload Category Image</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="customFile" name="img" />
+                                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                                        </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div>
-                                            <button type="submit" class="btn btn-primary">Creat Project</button>
+                                            <button type="submit" class="btn btn-primary">Add Category</button>
                                         </div>
                                     </form>
                                 </div>
