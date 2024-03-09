@@ -102,42 +102,6 @@
             </div>
         </section>
 
-        <!-- BY STYLE
-        ================================================== -->
-        <section class="bg-trend">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 mb-1-9 mb-lg-0">
-                        <div class="pe-xl-6">
-                            <h2 class="h1 mb-1-6 mb-lg-1-9">Shop <br>By Style</h2>
-                            <p class="mb-1-6 mb-lg-1-9">Style any open air region with a few cautious review and cool headed choices.</p>
-                            <a href="shop-categories.html" class="text-uppercase small font-weight-600 border-bottom border-color-black text-dark">All Categories</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="owl-carousel owl-theme by-trend-carousel text-center">
-                            <a href="shop-product-list.html">
-                                <img src="img/content/by-trend-01.jpg" alt="...">
-                                <h3 class="h5 mb-0 mt-3">Classic Traditional</h3>
-                            </a>
-                            <a href="shop-product-list.html">
-                                <img src="img/content/by-trend-02.jpg" alt="...">
-                                <h3 class="h5 mb-0 mt-3"> Mid-century Modern</h3>
-                            </a>
-                            <a href="shop-product-list.html">
-                                <img src="img/content/by-trend-03.jpg" alt="...">
-                                <h3 class="h5 mb-0 mt-3">Scandinavian</h3>
-                            </a>
-                            <a href="shop-product-list.html">
-                                <img src="img/content/by-trend-04.jpg" alt="...">
-                                <h3 class="h5 mb-0 mt-3">Minimalist</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- FEATURED PRODUCTS
         ================================================== -->
         <section>

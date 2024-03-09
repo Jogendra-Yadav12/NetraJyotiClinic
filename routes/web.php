@@ -63,3 +63,11 @@ Route::get('address', function () {
 Route::get('super', function () {
     return view('admin.index');
 });
+
+Route::get('category', function () {
+    return view('admin.category');
+});
+
+Route::get('addCategory', function () {
+    return view('admin.addCategory');
+});

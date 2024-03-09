@@ -39,7 +39,7 @@
     ================================================== -->
     <div id="preloader"></div>
 
-    @yield('content')admin/
+    @yield('content')
 
                 <div class="page-footer">
                     <p>Copyright &copy; <span class="current-year"></span> Smartshop All rights reserved.</p>
