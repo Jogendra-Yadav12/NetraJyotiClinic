@@ -20,7 +20,8 @@
                                     <h4 class="card-title">Add Sub Category</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form class="form-inline" action="{{url('')}}">
+                                    <form class="form-inline" action="{{url('subCategory')}}" method="POST" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="form-group">
                                             <label for="example">Sub Category Name</label>
                                             <input type="text" class="form-control" id="example" name="name" />

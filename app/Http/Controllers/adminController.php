@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class adminController extends Controller
@@ -32,4 +33,18 @@ class adminController extends Controller
             'img' => $imageName,
         ]);
     }
+
+    public function subCategory(Request $request){
+        $request->validate([
+            'name'=>'required'
+        ]);
+
+        SubCategory::create([
+            'name'=>$request->name
+        ]);
+
+        return redirect()->back();
+    }
+
+
 }

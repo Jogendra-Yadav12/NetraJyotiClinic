@@ -24,7 +24,7 @@
                                         <div class="row">
                                             <div class="col-md-12 mb-3">
                                                 <label for="validationCustom01">Name</label>
-                                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" name="name" required>
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>

@@ -68,6 +68,7 @@ Route::get('super', function () {
 Route::get('category',[App\Http\Controllers\adminController::class,'category']);
 Route::get('addCategory',[App\Http\Controllers\adminController::class,'index']);
 Route::post('addCategory',[App\Http\Controllers\adminController::class,'addcategory']);
+Route::post('subCategory',[App\Http\Controllers\adminController::class,'subCategory']);
 
 Route::get('product', function () {
     return view('admin.product');
